@@ -1,7 +1,7 @@
 ---
 category: Stuff
 path: '/stuff/:id'
-title: 'Fetch Invoice/Xero Contact'
+title: 'Fetch Invoice/Xero Contact (Get Stuff)'
 type: 'DELETE'
 
 layout: nil
