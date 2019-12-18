@@ -9,7 +9,8 @@ layout: nil
 
 ### Create Invoice Request
 [Xero Invoice  fields](https://developer.xero.com/documentation/api/invoices)
-	````try{
+	````
+	try{
 		BreadwinnerAPI.RequestObject req = new  BreadwinnerAPI.RequestObject();	
 		Invoice xi = new Invoice ();
 		xi.invoiceType='Invoice'; 
@@ -32,7 +33,8 @@ layout: nil
 		system.debug('created Invoice/////////' +res);
 	}catch(Exception ex){
 		System.debug('Exception occurred while creating customers in Xero.'+ex.getStackTraceString());
-	}```
+	}
+	```
 
 
 
