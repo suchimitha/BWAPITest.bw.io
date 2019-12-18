@@ -7,12 +7,25 @@ type: 'GET'
 layout: nil
 ---
 
-This method allows users to retrieve stuff.
 
-### Request
+### Create Customer Request
+[Xero Customer fields](https://developer.xero.com/documentation/api/contacts#POST)
+	````try{
+		BreadwinnerAPI.RequestObject req = new  BreadwinnerAPI.RequestObject();	
+		AccountWrapper str = new AccountWrapper();
+		str.name='MY5 NAME Test Create -';             
+		req.xeroCustomer = str;
 
-* The headers must include a **valid authentication token**.
-
+		BreadwinnerAPI.ResponseObject res =  BreadwinnerAPI.call('createCustomer', req);
+		if(res.errors.size()>0){
+			for(BreadwinnerAPI.Error er :res.errors){
+				System.debug(er); 
+			}
+		}
+		system.debug('created customer/////////' +res);
+	}catch(Exception ex){
+		System.debug('Exception occurred while creating customers in Xero.'+ex.getStackTraceString());
+}```
 ### Response
 
 Sends back a collection of things.
@@ -22,11 +35,6 @@ Sends back a collection of things.
     {
         id: thing_1,
         name: 'My first thing'
-    },
-    {
-        id: thing_2,
-        name: 'My second thing'
     }
 }```
 
-For errors responses, see the [response status codes documentation](#response-status-codes).
