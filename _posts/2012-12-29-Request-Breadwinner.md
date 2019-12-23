@@ -32,17 +32,17 @@ req.xeroInvoice  = sc;
 ### Request Actions
 It’s a string, used to define the type of action that needs to be performed.
 We are providing below types of actions.
-* ‘createCustomer’ - To create the customer in both Xero and Salesforce 
-* ‘updateCustomer’ - To update the customer in both Xero and salesforce
-* ‘fetchCustomers’ - To get a list of customers.
-Ex: req.action = ‘createCustomer’;
+* createCustomer - To create the customer in both Xero and Salesforce.
+* updateCustomer - To update the customer in both Xero and salesforce.
+* fetchCustomers - To get a list of customers.
+	Ex: req.action = ‘createCustomer’;
 
-* ‘Createinvoice’ - 
-* ‘Updateinvoice’ - 
-* ‘Fetchinvoice’-
-* ‘Createbill’-
-* ‘Updatebill’-
-* ‘Fetchbill’-
-* ‘Createpurchaseorder’-
-* ‘Updatepurchaseorder’-
-* ‘Fetchpurchaseorder’-
+* Createinvoice - To create the Invoice in both Xero and Salesforce.
+* Updateinvoice - To create the Invoice in both Xero and Salesforce.
+* Fetchinvoice - To get a list of Invoice(s). 
+* Createbill - To create the Bill in both Xero and Salesforce.
+* Updatebill - To update the Bill in both Xero and salesforce.
+* Fetchbill -	To get a list of Bill(s).
+* Createpurchaseorder - To create the Purchase Order in both Xero and Salesforce.
+* Updatepurchaseorder - To update the Purchase Order in both Xero and salesforce.
+* Fetchpurchaseorder - To get a list of Purchase Order(s).

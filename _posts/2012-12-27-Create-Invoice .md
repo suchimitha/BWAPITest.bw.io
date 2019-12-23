@@ -23,7 +23,6 @@ layout: nil
 		xi.LineItems = lineitems;
 		xi.ClientId = '39efa556-8dda-4c81-83d3-a631e59eb6d3';
 		req.xeroInvoice= xi;
-
 		BreadwinnerAPI.ResponseObject res =  BreadwinnerAPI.call('createInvoice', req);
 		if(res.errors.size()>0){
 			for(BreadwinnerAPI.Error er :res.errors){

@@ -10,6 +10,7 @@ layout: nil
 
 ### Create Customer Request
 [Xero Customer fields](https://developer.xero.com/documentation/api/contacts#POST)
+
 	````
 	try{
 		BreadwinnerAPI.RequestObject req = new  BreadwinnerAPI.RequestObject();	
@@ -28,6 +29,7 @@ layout: nil
 		System.debug('Exception occurred while creating customers in Xero.'+ex.getStackTraceString());
 	}
 ```
+
 ### Response
 
 Sends back a collection of things.

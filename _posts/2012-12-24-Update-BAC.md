@@ -9,6 +9,7 @@ layout: nil
 
 ### Update Customer Request
 [Xero Customer fields](https://developer.xero.com/documentation/api/contacts#POST)
+
 	````
 	try{
 		BreadwinnerAPI.RequestObject req = new  BreadwinnerAPI.RequestObject();	
